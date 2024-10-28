@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Formularios y Tablas</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html" class="active">Formulario</a></li>
+        <li><a href="tablas.html">Tabla</a></li>
+      </ul>
+    </nav>
+
+    <div class="principal">
+      <input type="checkbox" id="chk" aria-hidden="true" />
+
+      <div class="registro">
+        <form action="/">
+          <label for="chk" aria-hidden="true">
+            <img
+              src="assets/logo-negativo.png"
+              alt="Registrarse"
+              title="Registrarse"
+            />
+          </label>
+          <input
+            type="text"
+            name="txt"
+            placeholder="Nombre de usuario"
+            required=""
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Correo electrónico"
+            required=""
+          />
+          <input
+            type="password"
+            name="pswd"
+            placeholder="Contraseña"
+            required=""
+          />
+          <input
+            type="password"
+            name="pswd"
+            placeholder="Confirmar contraseña"
+            required=""
+          />
+          <button type="submit">Registrarse</button>
+        </form>
+      </div>
+
+      <div class="inicio-sesion">
+        <form action="/">
+          <label for="chk" aria-hidden="true">Iniciar sesión</label>
+          <input
+            type="email"
+            name="email"
+            placeholder="Correo electrónico"
+            required=""
+          />
+          <input
+            type="password"
+            name="pswd"
+            placeholder="Contraseña"
+            required=""
+          />
+          <button type="submit">Iniciar sesión</button>
+          <p>¿Aún sin cuenta? <a href="#">Regístrate aquí</a></p>
+        </form>
+      </div>
+    </div>
+    <footer>
+      <p>&copy; 2024 FemCoders Club</p>
+    </footer>
+  </body>
+</html>
